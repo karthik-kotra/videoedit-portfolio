@@ -67,3 +67,10 @@ const watchbutton = document.querySelector('.watch-button');
 watchbutton.addEventListener('click',()=>{
     window.open("https://drive.google.com/file/d/1j4VNerdEVWl4ggJ9JzyhwgXFhlwjslE9/view?usp=sharing","_blank");
 });
+
+document.querySelectorAll('.reel-card video').forEach(video => {
+    video.addEventListener('mouseenter', () => video.play());
+    video.addEventListener('mouseleave', () => video.pause());
+  });
+
+
